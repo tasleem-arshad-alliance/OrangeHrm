@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="OrangeHRM Report(failed)">
+    <classes>
+      <class name="Testcases.UserTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.UserTestcases -->
+      <class name="Testcases.LeaveEntitlementTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="AddLeaveEntitlement"/>
+        </methods>
+      </class> <!-- Testcases.LeaveEntitlementTestcases -->
+      <class name="Testcases.DashboardTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.DashboardTestcases -->
+      <class name="Testcases.assignLeaveTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testcases.assignLeaveTestcases -->
+      <class name="Testcases.LoginTestcases">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcases.LoginTestcases -->
+    </classes>
+  </test> <!-- OrangeHRM Report(failed) -->
+</suite> <!-- Failed suite [Suite] -->

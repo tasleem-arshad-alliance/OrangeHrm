@@ -21,26 +21,39 @@ public class UserloginTestcases extends TestBase {
 	      Thread.sleep(2000);
 	      userlogin.clickonLeaveMenu();
 	      userlogin.clickonApplyLeave();
-	      Thread.sleep(4000);
-	      userlogin.selectonLeaveType("Paternity US");
 	      Thread.sleep(2000);
-	      userlogin.FromdateofLeave("2019-12-05");
-	      userlogin.TodateofLeave("2019-12-15");
-	      userlogin.clickonDurationDropdoewn("Full Day");
+
+	      userlogin.selectonLeaveType("FMLA US");
+	      Thread.sleep(2000);
+	      userlogin.FromdateofLeave("2019-12-01");
+	      userlogin.TodateofLeave("2019-12-05");
+//	      userlogin.clickonDurationDropdoewn("Full Day");
 	      userlogin.ApplyButton();
-          Thread.sleep(2000);
-	      //logout
+	      System.out.println("Apply button is clickable");
+          Thread.sleep(8000);
+          userlogin.LogoutButton();
 	     
 			}
-	
-	
+	 
+
 //	@Test(priority=2)
 //	public void LoginSecondUserWithPassword() throws InterruptedException {
-//	      userlogin.login(prop.getProperty("usertwo"), prop.getProperty("passwordtwo"));
-//	      //steps
-//	      //logout
-//	      Thread.sleep(3000);
-//			}
+//  userlogin.login(prop.getProperty(""), prop.getProperty(""));
+//    Thread.sleep(2000);
+//    userlogin.clickonLeaveMenu();
+//    userlogin.clickonApplyLeave();
+//    Thread.sleep(2000);
+//    
+//    userlogin.selectonLeaveType("FMLA US");
+//    Thread.sleep(2000);
+//    userlogin.FromdateofLeave("2019-01-01");
+//    userlogin.TodateofLeave("2019-01-10");
+////    userlogin.clickonDurationDropdoewn("Full Day");
+//    userlogin.ApplyButton();
+//    Thread.sleep(5000);
+////    userlogin.LogoutButton();
+   
+//		}
 	
 	@BeforeMethod
 	  public void setUp() {
@@ -51,7 +64,7 @@ public class UserloginTestcases extends TestBase {
 	
 	@AfterMethod
 	  public void tearDown() {
-			driver.quit();
+//			driver.quit();
 	  }
 
 	
